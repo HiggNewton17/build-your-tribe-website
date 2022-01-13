@@ -1,0 +1,114 @@
+/*     Global Styles    */
+:root {
+  --bg-color: #0D1A1B;
+  --text-color: #D8D8D8;
+  --alt-color: #FF904D;
+}
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+/* Fonts */
+
+h1, h2, h3, button {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.emphasizedTitle {
+  font-weight: 700;
+  font-style: italic;
+  display: block;
+  text-align: center;
+}
+
+.headerText {
+  font-size: 20px;
+}
+
+#dynamicText {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--alt-color);
+}
+
+
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 26px;
+  background-color: white;
+  margin-left: 3px;
+  margin-bottom: -6px;
+  animation: blink .6s linear infinite alternate;
+}
+
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--text-color);
+}
+
+
+
+/* Navigation */
+
+.stickyBarNav {
+    height: 62px;
+    width: 100%;
+    position: sticky;
+    inset: 0 0 auto 0;
+    background-color: #3434346b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px 0 0;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+}
+
+
+/* Sections */
+
+.mainHero {
+    background-image:url(/images/friends-together-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -62px;
+    padding: 0 2% 45% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
